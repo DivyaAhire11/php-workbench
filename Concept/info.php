@@ -9,8 +9,8 @@ $Student = "divya";
 define ("PI",3.14);
 echo PI; //3.14
 $PI = 999;
-echo "\n",$PI;   //999
-echo "\n",PI;    //3.14
+echo "<br>",$PI;   //999
+echo "<br>",PI;    //3.14
 
 //keyword = reserved word 
 

@@ -5,10 +5,10 @@
      $age = 20;
      $msg = "Good Day";
 
-     echo "Name is : $name \n Age is : $age \n Massage is : $msg";
+     echo "Name is : $name <br> Age is : $age <br> Massage is : $msg";
 
-     $name = "riya\n";
-     $Name = "priya\n";
+     $name = "riya<br>";
+     $Name = "priya<br>";
      echo $name;
      ECHO $Name;  //ECHO is valid
 
@@ -33,17 +33,17 @@
 $food = "fruit";
 $fruit = "Mango";
 
-echo  $$food,"\n"; //Mango
+echo  $$food,"<br>"; //Mango
 
 
 $a = "b";
 $b = "c";
 $c = "PHP";
 
-echo "$b\n"; //c
-echo $$a,"\n"; //c
-echo $a,"\n"; //b
-echo $$$a,"\n"; //PHP
+echo "$b<br>"; //c
+echo $$a,"<br>"; //c
+echo $a,"<br>"; //b
+echo $$$a,"<br>"; //PHP
 
 
 $NAME = "student";
@@ -58,6 +58,6 @@ echo $$NAME; //divya
 $name = "colors";
 $colors = ["red","green","blue"];
 foreach($$name as $color){
-    echo $color . "\n";
+    echo $color . "<br>";
 }
 ?>

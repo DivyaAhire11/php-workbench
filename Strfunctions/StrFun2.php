@@ -8,23 +8,23 @@
   $x = "Hello PHP";
 
   echo strpos($x,"P"); //6 :starting from zero(H=0, e=1, l=2, l=3, o=4, space=5, P=6)
-  echo "\n";
+  echo "<br>";
   echo strpos("hey lets practice more examples","a");//11
-  echo "\n";
+  echo "<br>";
 
    echo strrpos($x,"P"); //8 :"P" last appears at index 8 (H=0, e=1, l=2, l=3, o=4, space=5, P=6, H=7, P=8)
-  echo "\n";
+  echo "<br>";
   echo strrpos("hey lets practice more examples","a");//25
   
 
   $msg = "Hey! Good Luck";
-  // echo "\n",strrev($msg);//kcuL dooG !yeH
-  // echo "\n",strrev($x);//PHP olleH
+  // echo "<br>",strrev($msg);//kcuL dooG !yeH
+  // echo "<br>",strrev($x);//PHP olleH
 
   $a = str_replace("!"," divya",$msg); //Hey divya Good Luck
   echo $a;
-  echo "\n\n";
+  echo "<br><br>";
   echo strtoupper($msg);
-  echo "\n";
+  echo "<br>";
   echo strtolower($msg);
 ?>

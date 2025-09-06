@@ -1,9 +1,9 @@
 <?php
    //ucwords($str) : First letter of each word uppercase
 
-   echo ucfirst("my name is divya."),"\n";   //My name is divya.
-   echo ucwords("php is fun"),"\n";   //Php Is Fun
-   echo ucwords("my name is divya."),"\n";   //My Name Is Divya.
+   echo ucfirst("my name is divya."),"<br>";   //My name is divya.
+   echo ucwords("php is fun"),"<br>";   //Php Is Fun
+   echo ucwords("my name is divya."),"<br>";   //My Name Is Divya.
 
    $m = "    Hello    ";
    echo trim($m); //Remove whitespace
