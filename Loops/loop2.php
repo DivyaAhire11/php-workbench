@@ -45,4 +45,17 @@ if ($num == 0) {
 echo "Factorial of $original is : $fact";
 
 
+for($i=0;$i<5;$i++){
+    for($j = 0;$j<= $i;$j++){
+        echo "*";
+    }
+    echo "<br>";
+}
+
+for($n = 1 ;$n <= 100 ; $n++){
+    if($n % 3 == 0 && $n % 5 ==0){
+         echo "<br> $n are divisible by 3 and 5";
+    }
+}
+
 ?>
