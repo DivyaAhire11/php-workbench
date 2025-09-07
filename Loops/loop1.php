@@ -1,37 +1,37 @@
 <?php
 //while loop
 
-// $i = 1;
-// while ($i <= 5) {
-//     echo "Number: $i \n";
-//     $i++;
-// }
+$i = 1;
+while ($i <= 5) {
+    echo "Number: $i \n";
+    $i++;
+}
 
-// echo "\n\n";
+echo "\n\n";
 
-// $i = 2;
-// while ($i <= 20) {
-//     echo $i . " ";
-//     $i += 2;
-// }
+$i = 2;
+while ($i <= 20) {
+    echo $i . " ";
+    $i += 2;
+}
 
-// echo "\n\n";
+echo "\n\n";
 
-// $num = 5;
-// $fact = 1;
-// $i = 1;
+$num = 5;
+$fact = 1;
+$i = 1;
 
-// while ($i <= $num) {
-//     $fact *= $i;
-//     $i++;
-// }
+while ($i <= $num) {
+    $fact *= $i;
+    $i++;
+}
 
-// echo "Factorial of $num = $fact";
+echo "Factorial of $num = $fact";
 
-// echo "\n\n";
+echo "\n\n";
 
 
-//eg.1234 -> 4321
+// eg.1234 -> 4321
 $N = 12345;
 
 while($N){
@@ -56,6 +56,23 @@ while($count != 0){
 }
 echo "Sum of $original is :$sum";
 
+echo "\n\n";
 
+$n = 153;
+$original = $n;
+$count = strlen((string)$n);
+$p = $count;
+$sum = 0;
+while($count != 0){
+    $n = (int)$n;
+    $a = $n % 10;
+    $sum += $a ** $p;
+    $n = intdiv($n, 10);
+    $count --;
+}
+if($sum == $original)
+    echo "$original is a ARMSTRONG NUMBER";
+else
+    echo "$original is not a ARMSTRONG NUMBER"
 
 ?>
