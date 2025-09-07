@@ -17,6 +17,9 @@ if($marks >= 90){
 echo "Grade is : $grade";
 
 
+echo "<br><br>";
+
+
 //Positive,Negative,zero
 $n = 47;
 if($n > 0){
@@ -26,6 +29,10 @@ if($n > 0){
 }else{
     echo "$n is Negative";
 }
+
+echo "<br><br>";
+
+
 
 $salary = 80000;
 if($salary > 100000){
@@ -38,6 +45,7 @@ if($salary > 100000){
     echo "No Tax";
 }
 
+echo "<br><br>";
 
 $age = 20;
 if($age >=0 && $age <= 12){
@@ -52,4 +60,6 @@ if($age >=0 && $age <= 12){
     $category = "Senior Citizen";
 }
 echo " YOUR Chategory Is : $category";
+
+
 ?>

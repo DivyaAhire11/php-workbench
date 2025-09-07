@@ -3,11 +3,11 @@
 
 $i = 1;
 while ($i <= 5) {
-    echo "Number: $i <br>";
+    echo "Number: $i \n";
     $i++;
 }
 
-
+echo "\n\n";
 
 $i = 2;
 while ($i <= 20) {
@@ -15,6 +15,7 @@ while ($i <= 20) {
     $i += 2;
 }
 
+echo "\n\n";
 
 $num = 5;
 $fact = 1;
@@ -27,7 +28,7 @@ while ($i <= $num) {
 
 echo "Factorial of $num = $fact";
 
-
+echo "\n\n";
 
 
 ?>
