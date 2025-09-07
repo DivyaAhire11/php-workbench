@@ -3,11 +3,11 @@
 
 $i = 1;
 while ($i <= 5) {
-    echo "Number: $i \n";
+    echo "Number: $i <br>";
     $i++;
 }
 
-echo "\n\n";
+echo "<br><br>";
 
 $i = 2;
 while ($i <= 20) {
@@ -15,7 +15,7 @@ while ($i <= 20) {
     $i += 2;
 }
 
-echo "\n\n";
+echo "<br><br>";
 
 $num = 5;
 $fact = 1;
@@ -28,7 +28,7 @@ while ($i <= $num) {
 
 echo "Factorial of $num = $fact";
 
-echo "\n\n";
+echo "<br><br>";
 
 
 // eg.1234 -> 4321
@@ -41,7 +41,7 @@ while($N){
    
 }
 
-echo "\n\n";
+echo "<br><br>";
 
 $digit = 987;
 $original = $digit;
@@ -56,7 +56,7 @@ while($count != 0){
 }
 echo "Sum of $original is :$sum";
 
-echo "\n\n";
+echo "<br><br>";
 
 $n = 153;
 $original = $n;
@@ -73,6 +73,9 @@ while($count != 0){
 if($sum == $original)
     echo "$original is a ARMSTRONG NUMBER";
 else
-    echo "$original is not a ARMSTRONG NUMBER"
+    echo "$original is not a ARMSTRONG NUMBER";
+
+
+
 
 ?>
