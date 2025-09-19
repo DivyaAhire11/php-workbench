@@ -1,5 +1,6 @@
 <?php
 //Type Casting and Overwriting example
+
 $array = array(
     1    => "a", // (1 ==>1 , "1" ==> 1 ,1.5 ==> 1, true==>1) all means 1 so overwritten at last contain 1 as d o/p is d
     "1"  => "b", //(string "1" becomes integer key 1)
@@ -8,11 +9,11 @@ $array = array(
 );
 var_dump($array);
 print_r($array);
-?>
 
-<br><br>
 
-<?php
+echo "<br><br>";
+
+
 $array = array(
     1    => 'a',  //1->a ->b ->c ->f->g (OVERWRITE)
     '1'  => 'b',   // the value "a" will be overwritten by "b"
@@ -43,6 +44,56 @@ $demo = [];
 $demo[-5] = 10;// [-5] => 10 
 $demo[] = 6; //[0] => 6
 print_r($demo);
+
+
+
+$Fruit = array(
+    "shape" => "Round",
+    "Names" => array(
+                "Mango",
+                "Orange",
+                "Grapes",
+                "Test"=> array(
+                            "sweet",
+                             "sour"
+                              )
+                   ),
+                "price"=>500
+             );
+
+print_r($Fruit["shape"]); //Round
+echo "<br><br>";
+
+print_r($Fruit["Names"]); 
+echo "<br><br>";
+
+print_r($Fruit["price"]); //500
+echo "<br><br>";
+
+print_r($Fruit["Names"]["Test"][1]); //sour
+echo "<br><br>";
+
+print_r($Fruit["Names"][2]);//Grapes
+echo "<br><br>";
+
+print_r($Fruit["Names"]["Test"][0]); //sweet
+echo "<br><br>";
+
+
+
+
+function getValue() {
+    return array("DIvya", "Vilas", "Ahire");
+}
+
+// $secEle = getArray()[1];
+// echo $secEle;
+
+echo getValue()[0]."<br>";
+echo getValue()[1]."<br>";
+echo getValue()[2]."<br>";
+
+
 
 ?>
 
