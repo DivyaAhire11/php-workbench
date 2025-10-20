@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h2>Arithmetic Operations</h2>
+    <form action="process.php" method="post">
+        <label>Enter First Number:</label><br>
+        <input type="number" name="num1" required><br><br>
+
+        <label>Enter Second Number:</label><br>
+        <input type="number" name="num2" required><br><br>
+
+        <label>Select Operation:</label><br>
+        <input type="radio" name="operation" value="add" checked> Add<br>
+        <input type="radio" name="operation" value="sub"> Subtract<br>
+        <input type="radio" name="operation" value="mul"> Multiply<br>
+        <input type="radio" name="operation" value="div"> Divide<br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
