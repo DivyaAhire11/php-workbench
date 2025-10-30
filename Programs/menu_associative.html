@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Student Marks Entry</title>
+    <meta charset="utf-8">
+    <title>Associative Array Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Enter Student Marks</h2>
+    <h2>Menu: Associative Array Operations</h2>
 
-    <form action="result.php" method="post">
-        <label>Serial Numbers (comma separated):</label><br>
-        <input type="text" name="serial" placeholder="1,2,3,4,5" required><br><br>
+    <form action="menu_associative.php" method="post">
+        <label for="choice">Choose an operation:</label><br>
+        <select id="choice" name="choice" required>
+            <option value="reverse">a) Reverse key & value</option>
+            <option value="shuffle">b) Shuffle (random order)</option>
+            <option value="extract">c) Extract into variables</option>
+            <option value="display">d) Display all elements</option>
+        </select><br><br>
 
-        <label>Subjects (comma separated):</label><br>
-        <input type="text" name="subject" placeholder="Maths,Science,English,..." required><br><br>
-
-        <label>Marks (comma separated):</label><br>
-        <input type="text" name="marks" placeholder="80,90,75,88,92" required><br><br>
-
-        <input type="submit" value="Show Result">
+        <input type="submit" value="Perform">
     </form>
 </body>
 </html>
