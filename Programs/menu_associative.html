@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Enter Student Marks</h2>
+
+    <form action="result.php" method="post">
+        <label>Serial Numbers (comma separated):</label><br>
+        <input type="text" name="serial" placeholder="1,2,3,4,5" required><br><br>
+
+        <label>Subjects (comma separated):</label><br>
+        <input type="text" name="subject" placeholder="Maths,Science,English,..." required><br><br>
+
+        <label>Marks (comma separated):</label><br>
+        <input type="text" name="marks" placeholder="80,90,75,88,92" required><br><br>
+
+        <input type="submit" value="Show Result">
+    </form>
+</body>
+</html>
