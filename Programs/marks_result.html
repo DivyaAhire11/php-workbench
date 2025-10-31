@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Student Marks Entry</title>
@@ -50,8 +49,7 @@
             margin-top: 20px;
         }
 
-        th,
-        td {
+        th, td {
             border: 1px solid #333;
             padding: 8px;
             text-align: center;
@@ -62,30 +60,22 @@
             color: #fff;
         }
     </style>
-
 </head>
-
 <body>
     <h2>Enter Marks for 5 Subjects</h2>
 
     <form method="post" action="marks_result.php">
         <p>
-            Serial numbers :<br>
-            <input type="text" name="serial" placeholder="1,2,3,4,5" required>
-        </p>
-
-        <p>
-            Subject names :<br>
+            Subject names:<br>
             <input type="text" name="subject" placeholder="Maths,Science,English,..." required>
         </p>
 
         <p>
-            Marks :<br>
+            Marks:<br>
             <input type="text" name="marks" placeholder="80,90,75,88,92" required>
         </p>
 
         <input type="submit" value="Show Result">
     </form>
 </body>
-
 </html>

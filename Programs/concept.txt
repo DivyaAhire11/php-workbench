@@ -16,4 +16,6 @@ FOR LOOPS
 
 1) extract($arr) :  turns array keys into variables
 2) array_flip($arr) : "Sagar" => "31" becomes "31" => "Sagar"
-
+3) trim() : removes extra spaces from strings
+4) array_map('trim', $serials) means:
+          Apply the trim() function to each element of $serials array.

@@ -9,14 +9,18 @@ function calculateGrade($percentage) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $serials = explode(',', $_POST['serial']);
+    // Get input and split into arrays
     $subjects = explode(',', $_POST['subject']);
     $marks = explode(',', $_POST['marks']);
 
-    $serials = array_map('trim', $serials);
+    // Clean spaces
     $subjects = array_map('trim', $subjects);
     $marks = array_map('trim', $marks);
 
+    // Automatically create serial numbers (1, 2, 3, ...)
+    $serials = range(1, count($subjects));
+
+    // Calculate total, percentage, and grade
     $total = array_sum($marks);
     $percentage = $total / count($marks);
     $grade = calculateGrade($percentage);
@@ -28,7 +32,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Student Marks Result</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            background: #fff;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background: #007BFF;
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h2>Student Result</h2>
@@ -42,9 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </tr>
         <?php for ($i = 0; $i < count($marks); $i++): ?>
         <tr>
-            <td><?= htmlspecialchars($serials[$i]) ?></td>
-            <td><?= htmlspecialchars($subjects[$i]) ?></td>
-            <td><?= htmlspecialchars($marks[$i]) ?></td>
+            <td><?= $serials[$i] ?></td>
+            <td><?= $subjects[$i] ?></td>
+            <td><?= $marks[$i] ?></td>
         </tr>
         <?php endfor; ?>
         <tr>
@@ -63,5 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php else: ?>
         <p>No data submitted.</p>
     <?php endif; ?>
+
+    <p><a href="marks_result.html">← Back to Entry</a></p>
 </body>
 </html>
