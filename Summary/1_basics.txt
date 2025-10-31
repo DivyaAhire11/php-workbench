@@ -43,19 +43,19 @@
 5️] CONDITIONALS
 
     if ($x > 10) {
-    echo "Greater";
+       echo "Greater";
     } elseif ($x == 10) {
-    echo "Equal";
+       echo "Equal";
     } else {
-    echo "Smaller";
+       echo "Smaller";
     }
 
 
     // ALTERNATIVE SYNTAX
         if ($x > 10): 
-        echo "Greater";
+           echo "Greater";
         elseif ($x == 10): 
-        echo "Equal";
+           echo "Equal";
         else:
-        echo "Smaller";
+           echo "Smaller";
         endif;
