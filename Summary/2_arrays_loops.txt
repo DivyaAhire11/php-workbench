@@ -60,3 +60,33 @@ eg :
      $arr = ["name" => "John", "age" => 30];
      print_r(array_keys($arr)); // Output: ["name", "age"]
 
+5] array_values($arr) : Returns all the values of the array
+eg : 
+    $arr = ["name" => "John", "age" => 30];
+    print_r(array_values($arr)); // Output: ["John", 30]
+
+
+6]array_flip($arr) : Swaps keys with their corresponding values
+eg : 
+    $arr = ["a" => 1, "b" => 2];
+    print_r(array_flip($arr)); // Output: [1 => "a", 2 => "b"]
+
+
+7] shuffle($arr) : Randomly shuffles the elements of the array
+eg :
+      $arr = [1, 2, 3, 4];
+      shuffle($arr);
+      print_r($arr); // Output: Random order like [3, 1, 4, 2]
+
+8] sort($arr) : Sorts the array in ascending order and reindexes it
+eg : 
+    $arr = [3, 1, 2];
+    sort($arr);
+    print_r($arr); // Output: [1, 2, 3]
+
+
+9]asort($arr) : Sorts the array in ascending order while preserving key
+eg : 
+   $arr = ["a" => 3, "b" => 1, "c" => 2];
+   asort($arr);
+   print_r($arr); // Output: ["b" => 1, "c" => 2, "a" => 3]
