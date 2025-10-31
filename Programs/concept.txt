@@ -19,3 +19,4 @@ FOR LOOPS
 3) trim() : removes extra spaces from strings
 4) array_map('trim', $serials) means:
           Apply the trim() function to each element of $serials array.
+5) $serials = range(1, count($subjects)); --> [1, 2, 3, 4,.....]
