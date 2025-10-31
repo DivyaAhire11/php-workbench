@@ -1,0 +1,62 @@
+       ARRAY TYPES
+      =============
+
+-----------------------------
+1️] Indexed:
+   $names = ["Sagar", "Vicky", "Leena"];
+
+2️] Associative:
+   $age = ["Sagar" => 31, "Vicky" => 41];
+
+3️] Multi-dimensional:
+   $students = [
+      ["Sagar", 31],
+      ["Vicky", 41]
+   ];
+
+------------------------------
+        LOOPS
+      =========
+
+for ($i = 0; $i < 5; $i++) {
+   echo $i;
+}
+
+foreach ($age as $key => $value) {
+   echo "$key => $value";
+}
+
+// Alternative foreach syntax
+
+<?php foreach ($arr as $k => $v): ?>
+   <p><?= $k ?> = <?= $v ?></p>
+<?php endforeach; ?>
+
+-------------------------------
+
+      ARRAY FUNCTIONS
+     =================
+
+1] count($arr) : Returns the number of elements in the array
+eg: 
+    $arr = [1, 2, 3];
+    echo count($arr); // Output: 3
+
+2] array_push($arr, "new") : Adds one or more elements to the end of the array
+eg: 
+    $arr = ["apple", "banana"];
+    array_push($arr, "cherry");
+    print_r($arr); // Output: ["apple", "banana", "cherry"]
+
+3] array_pop($arr) : Removes and returns the last element of the array
+eg : 
+      $arr = ["a", "b", "c"];
+      $last = array_pop($arr);
+      echo $last; // Output: c
+      print_r($arr); // Output: ["a", "b"]
+
+4] array_keys($arr) : Returns all the keys of the array
+eg : 
+     $arr = ["name" => "John", "age" => 30];
+     print_r(array_keys($arr)); // Output: ["name", "age"]
+
