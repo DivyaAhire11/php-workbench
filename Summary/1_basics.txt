@@ -1,0 +1,61 @@
+-----------------------------------------
+1] PHP BASICS
+
+    - PHP = Hypertext Preprocessor (server-side scripting language)
+    - Extension: .php
+    - Run on server (XAMPP, WAMP, etc.)
+    - Every PHP file starts with:
+    <?php ... ?>
+
+-----------------------------------------
+
+
+2] OUTPUT STATEMENTS
+
+    echo "Hello";     // Common way
+    print "Hello";    // Slightly slower, returns 1
+
+    // Both print output to browser
+
+-----------------------------------------
+
+3] VARIABLES
+
+    $name = "Sagar";
+    $age = 21;
+
+    echo "My name is $name and age is $age";
+    echo 'My name is ' . $name . ' and age is ' . $age;  // Concatenation
+
+    // DIFFERENCE between "" and ''
+    " " => Interprets variables
+    ' ' => Treats as plain text
+
+-----------------------------------------
+
+4️] CONSTANTS
+
+    define("SITE", "MyWebsite");
+    echo SITE;
+
+-----------------------------------------
+
+5️] CONDITIONALS
+
+    if ($x > 10) {
+    echo "Greater";
+    } elseif ($x == 10) {
+    echo "Equal";
+    } else {
+    echo "Smaller";
+    }
+
+
+    // ALTERNATIVE SYNTAX
+        if ($x > 10): 
+        echo "Greater";
+        elseif ($x == 10): 
+        echo "Equal";
+        else:
+        echo "Smaller";
+        endif;
