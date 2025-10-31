@@ -1,0 +1,19 @@
+IF ELSE 
+
+    <?php if (...) : ?>
+        ...
+    <?php elseif (...) : ?>
+        ...
+    <?php else: ?>
+        ...
+    <?php endif; ?>
+
+FOR LOOPS
+
+    <?php foreach (...) : ?>
+        ...
+    <?php endforeach; ?>
+
+1) extract($arr) :  turns array keys into variables
+2) array_flip($arr) : "Sagar" => "31" becomes "31" => "Sagar"
+
