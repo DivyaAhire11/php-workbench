@@ -90,3 +90,40 @@ eg :
    $arr = ["a" => 3, "b" => 1, "c" => 2];
    asort($arr);
    print_r($arr); // Output: ["b" => 1, "c" => 2, "a" => 3]
+
+10] ksort($arr) : Sorts an array by its keys in ascending order
+                  Preserves keys
+eg : 
+    $arr = ["c" => 3, "a" => 1, "b" => 2];
+    ksort($arr);
+    print_r($arr); // Output: ["a" => 1, "b" => 2, "c" => 3]
+
+
+11] krsort($arr) : Sorts an array by its keys in descending order
+                  Preserves keys
+eg : 
+     $arr = ["c" => 3, "a" => 1, "b" => 2];
+     krsort($arr);
+     print_r($arr); // Output: ["c" => 3, "b" => 2, "a" => 1]
+
+
+12] arsort($arr) : Sorts an array by values in descending order, maintaining key association
+                  Preserves keys
+eg : 
+     $arr = ["a" => 3, "b" => 1, "c" => 2];
+     arsort($arr);
+     print_r($arr); // Output: ["a" => 3, "c" => 2, "b" => 1]
+
+
+13] array_reverse($arr) : Returns an array with elements in reverse order
+eg : 
+   $arr = ["a" => 1, "b" => 2, "c" => 3];
+   $reversed = array_reverse($arr);
+   print_r($reversed); // Output: ["c" => 3, "b" => 2, "a" => 1]
+ 
+ 14] array_merge($arr1, $arr2) : Merges two or more arrays into one
+ eg : 
+      $arr1 = ["a" => 1, "b" => 2];
+      $arr2 = ["c" => 3];
+      $merged = array_merge($arr1, $arr2);
+      print_r($merged); // Output: ["a" => 1, "b" => 2, "c" => 3]
