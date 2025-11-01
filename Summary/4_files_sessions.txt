@@ -18,3 +18,22 @@
      8. file_get_contents(filename)	 : Reads entire file into a string
      9. file_put_contents(filename, data) : 	Writes data to file (creates file if not exist)
 
+*] File Opening Modes
+    
+    'r' :- 	Read only. 
+         Pointer at beginning.
+    'r+' :- Read/Write. 
+         Pointer at beginning.
+   
+    'w' :- 	Write only. 
+         Erases old contents or creates new file.
+    'w+' :- Read/Write.
+         Erases old contents.
+   
+    'a' :- 	Write only.
+         Appends to end of file.
+    'a+' :- Read/Write. 
+         Appends to end.
+   
+    'x' :- 	Create and write new file (fails if exists).
+    'x+' :- Create and read/write new file (fails if exists).
