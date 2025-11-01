@@ -1,0 +1,18 @@
+
+  WHAT IS A FUNCTION?
+
+     A function is a reusable block of code that performs a specific task.
+      It can accept inputs (parameters), execute logic, and optionally return a result.
+
+  TYPES OF FUNCTIONS
+    
+  *)  Built-in Functions: Provided by PHP (e.g., strlen(), array_merge())
+
+  *) User-defined Functions: Created by developers for custom tasks
+
+  *)  Anonymous Functions (Closures): Functions without names, often used as callbacks
+
+  *) Arrow Functions: Short syntax for anonymous functions (PHP 7.4+)
+
+
+
