@@ -37,3 +37,36 @@
    
     'x' :- 	Create and write new file (fails if exists).
     'x+' :- Create and read/write new file (fails if exists).
+
+
+
+
+        
+        FILE HANDLING
+        ==============
+
+$f = fopen("data.txt", "w");
+fwrite($f, "Hello PHP!");
+fclose($f);
+
+$f = fopen("data.txt", "r");
+echo fread($f, filesize("data.txt"));
+fclose($f);
+
+
+        SESSIONS (VVVIMP)
+        ==================
+
+session_start();
+$_SESSION['user'] = "Sagar";
+
+echo $_SESSION['user'];
+
+session_destroy();  // Ends session
+
+
+         COOKIES
+         ========
+         
+setcookie("username", "Sagar", time() + 3600);
+echo $_COOKIE['username'];
