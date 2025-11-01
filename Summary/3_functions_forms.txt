@@ -14,5 +14,58 @@
 
   *) Arrow Functions: Short syntax for anonymous functions (PHP 7.4+)
 
+------------------------------------------------
+         FUNCTIONS
+        ===========
+
+function greet($name = "Guest") {
+    return "Hello $name";
+}
+
+echo greet("Sagar");  // Hello Sagar
+echo greet();         // Hello Guest
 
 
+-------------------------------------------------
+1. Default Parameters
+
+function sayHello($name = "Guest") {
+    echo "Hello, $name!";
+}
+sayHello(); // Output: Hello, Guest!
+
+-------------------------------------------------
+
+2. Variable-Length Arguments
+function sum(...$numbers) {
+    return array_sum($numbers);
+}
+echo sum(1, 2, 3); // Output: 6
+
+-------------------------------------------------
+
+3. Anonymous Functions
+
+$greet = function($name) {
+    return "Hi, $name!";
+};
+echo $greet("Bob"); // Output: Hi, Bob!
+
+-------------------------------------------------
+
+4. Arrow Functions (PHP 7.4+)
+
+$double = fn($n) => $n * 2;
+echo $double(4); // Output: 8
+
+-------------------------------------------------
+
+5. Recursive Functions
+
+function factorial($n) {
+    if ($n <= 1) return 1;
+    return $n * factorial($n - 1);
+}
+echo factorial(5); // Output: 120
+
+-------------------------------------------------
