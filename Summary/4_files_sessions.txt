@@ -1,0 +1,20 @@
+*] What is File Handling in PHP?
+   File handling means performing operations like:
+      1. Creating a file
+      2. Opening a file
+      3. Reading from a file
+      4. Writing to a file
+      5. Appending data
+      6. Closing the file
+
+*] PHP File Handling Functions
+
+     1. fopen(filename, mode)	: Opens a file in a specified mode
+     2. fread(file, length)	 : Reads from an open file
+     3. fwrite(file, string) : 	Writes to an open file
+     4. fclose(file)	 : Closes the open file
+     6. file_exists(filename) : 	Checks if file exists
+     7. unlink(filename) : 	Deletes a file
+     8. file_get_contents(filename)	 : Reads entire file into a string
+     9. file_put_contents(filename, data) : 	Writes data to file (creates file if not exist)
+
