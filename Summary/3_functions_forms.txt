@@ -69,3 +69,38 @@ function factorial($n) {
 echo factorial(5); // Output: 120
 
 -------------------------------------------------
+
+Built-in Function Categories
+============================
+
+String	: Manipulate strings
+   eg 
+       strlen(), str_replace()
+   
+-------------------------------------------------
+Array : Handle arrays
+eg : 
+	array_merge(), array_keys()
+-------------------------------------------------
+Math : Perform calculations
+ eg :
+     abs(), round(), pow()	
+-------------------------------------------------
+
+Date/Time	:	Work with dates
+ eg :
+      date(), strtotime()
+-------------------------------------------------
+File System : Read/write files
+ eg:
+    	fopen(), file_get_contents()	
+-------------------------------------------------
+Variable Handling	: 	Check variables
+    eg:
+        isset(), empty()
+-------------------------------------------------
+Type Checking	: 	Validate types
+   eg :
+      is_array(), is_string()
+-------------------------------------------------
+
