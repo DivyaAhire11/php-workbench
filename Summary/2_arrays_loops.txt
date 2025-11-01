@@ -32,6 +32,34 @@ foreach ($age as $key => $value) {
 <?php endforeach; ?>
 
 -------------------------------
+      STANDARD PHP TAGS
+
+ 1.   <?php
+    echo "Hello World!";
+    ?>
+
+ 2.  <?= "Hello World!";  ?>  //used for quich printing
+
+ 3.   <?  echo "Hello World!";  ?>   //Old Style (not recommended)
+
+ 4.   <%  echo "Hello World!";  %>  //Removes from PHP7+
+
+ 5.   <script language="php">  //embeded php in html
+         echo "Hello from script tag!";
+      </script>
+
+ 6. <?php if($age >= 18): ?>
+        <p>Adult</p>
+    <?php else: ?>
+        <p>minor</p>
+    <?php endif; ?>
+
+7.  <ul>
+     <?php foreach($fruit as $f):  ?>
+        <li><?php   $f    ?>   </li>
+     <?php endforeach;  ?>  
+    </ul>
+------------------------------
 
       ARRAY FUNCTIONS
      =================
