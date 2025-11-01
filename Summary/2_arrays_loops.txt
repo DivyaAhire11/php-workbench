@@ -1,7 +1,6 @@
        ARRAY TYPES
       =============
 
------------------------------
 1️] Indexed:
    $names = ["Sagar", "Vicky", "Leena"];
 
@@ -42,11 +41,15 @@ eg:
     $arr = [1, 2, 3];
     echo count($arr); // Output: 3
 
+----------------------------------------------------------------
+
 2] array_push($arr, "new") : Adds one or more elements to the end of the array
 eg: 
     $arr = ["apple", "banana"];
     array_push($arr, "cherry");
     print_r($arr); // Output: ["apple", "banana", "cherry"]
+
+----------------------------------------------------------------
 
 3] array_pop($arr) : Removes and returns the last element of the array
 eg : 
@@ -55,10 +58,14 @@ eg :
       echo $last; // Output: c
       print_r($arr); // Output: ["a", "b"]
 
+----------------------------------------------------------------
+
 4] array_keys($arr) : Returns all the keys of the array
 eg : 
      $arr = ["name" => "John", "age" => 30];
      print_r(array_keys($arr)); // Output: ["name", "age"]
+
+----------------------------------------------------------------
 
 5] array_values($arr) : Returns all the values of the array
 eg : 
@@ -66,17 +73,23 @@ eg :
     print_r(array_values($arr)); // Output: ["John", 30]
 
 
+----------------------------------------------------------------
+
 6]array_flip($arr) : Swaps keys with their corresponding values
 eg : 
     $arr = ["a" => 1, "b" => 2];
     print_r(array_flip($arr)); // Output: [1 => "a", 2 => "b"]
 
 
+----------------------------------------------------------------
+
 7] shuffle($arr) : Randomly shuffles the elements of the array
 eg :
       $arr = [1, 2, 3, 4];
       shuffle($arr);
       print_r($arr); // Output: Random order like [3, 1, 4, 2]
+
+----------------------------------------------------------------
 
 8] sort($arr) : Sorts the array in ascending order and reindexes it
 eg : 
@@ -85,18 +98,32 @@ eg :
     print_r($arr); // Output: [1, 2, 3]
 
 
-9]asort($arr) : Sorts the array in ascending order while preserving key
+----------------------------------------------------------------
+
+9] rsort($arr) : Sorts the array value in descending order
+eg : 
+    $arr = [3, 1, 2];
+    rsort($arr);
+    print_r($arr); // Output: [ 3, 2 , 1 ]
+
+----------------------------------------------------------------
+
+10]asort($arr) : Sorts the array value in ascending order while preserving key
 eg : 
    $arr = ["a" => 3, "b" => 1, "c" => 2];
    asort($arr);
    print_r($arr); // Output: ["b" => 1, "c" => 2, "a" => 3]
 
-10] ksort($arr) : Sorts an array by its keys in ascending order
+----------------------------------------------------------------
+
+11] ksort($arr) : Sorts an array by its keys in ascending order
                   Preserves keys
 eg : 
     $arr = ["c" => 3, "a" => 1, "b" => 2];
     ksort($arr);
     print_r($arr); // Output: ["a" => 1, "b" => 2, "c" => 3]
+
+----------------------------------------------------------------
 
 
 11] krsort($arr) : Sorts an array by its keys in descending order
@@ -107,12 +134,16 @@ eg :
      print_r($arr); // Output: ["c" => 3, "b" => 2, "a" => 1]
 
 
+----------------------------------------------------------------
+
 12] arsort($arr) : Sorts an array by values in descending order, maintaining key association
                   Preserves keys
 eg : 
      $arr = ["a" => 3, "b" => 1, "c" => 2];
      arsort($arr);
      print_r($arr); // Output: ["a" => 3, "c" => 2, "b" => 1]
+
+----------------------------------------------------------------
 
 
 13] array_reverse($arr) : Returns an array with elements in reverse order
@@ -121,12 +152,16 @@ eg :
    $reversed = array_reverse($arr);
    print_r($reversed); // Output: ["c" => 3, "b" => 2, "a" => 1]
  
+----------------------------------------------------------------
+
  14] array_merge($arr1, $arr2) : Merges two or more arrays into one
  eg : 
       $arr1 = ["a" => 1, "b" => 2];
       $arr2 = ["c" => 3];
       $merged = array_merge($arr1, $arr2);
       print_r($merged); // Output: ["a" => 1, "b" => 2, "c" => 3]
+
+----------------------------------------------------------------
 
 15] array_diff($arr1, $arr2) : Returns values in $arr1 that are not in $arr2
 eg :
@@ -135,6 +170,8 @@ eg :
     $diff = array_diff($arr1, $arr2);
     print_r($diff); // Output: [0 => 1, 2 => 3]
 
+----------------------------------------------------------------
+
 16] array_intersect($arr1, $arr2) : Returns values common to both arrays
 eg : 
     $arr1 = [1, 2, 3];
@@ -142,9 +179,13 @@ eg :
     $common = array_intersect($arr1, $arr2);
     print_r($common); // Output: [1 => 2, 2 => 3]
 
+----------------------------------------------------------------
+
 17] array_unique($arr) : Removes duplicate values from an array
 eg : 
     $arr = [1, 2, 2, 3];
     $unique = array_unique($arr);
     print_r($unique); // Output: [0 => 1, 1 => 2, 3 => 3]
+
+----------------------------------------------------------------
 
