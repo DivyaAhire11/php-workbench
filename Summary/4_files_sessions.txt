@@ -54,8 +54,8 @@ echo fread($f, filesize("data.txt"));
 fclose($f);
 
 
-        SESSIONS (VVVIMP)
-        ==================
+        SESSIONS
+        =========
 
 session_start();
 $_SESSION['user'] = "Sagar";
