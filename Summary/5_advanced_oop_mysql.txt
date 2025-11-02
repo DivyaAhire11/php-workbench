@@ -50,3 +50,21 @@
 $obj = new Student("Sagar");
 $obj->show();
 
+*]Magic Methods in PHP?
+     They're automatically called in certain situations
+     we don’t call them directly
+1. __construct() : called when object is created
+
+2. __destruct() : called when an object is destroyed
+
+3. __get($name) : called when accessing an undefined or inaccessible prperty
+
+4. __set($name, $value) : Called when setting an undefined or inaccessible property
+
+5. __call($name, $arguments) : Called when invoking an undefined or inaccessible method
+
+6. __toString() : Called when an object is treated as a string
+
+7. __clone() : 	Called when an object is cloned
+
+8. __invoke() : Called when an object is used as a function
