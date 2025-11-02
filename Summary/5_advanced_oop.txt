@@ -1,0 +1,70 @@
+
+        OOP BASICS 
+        ===========
+
+
+  CLASS 
+        A class in PHP is a blueprint for creating objects. It defines properties (variables) and methods (functions) that the objects created from the class will have
+
+  ACCESS SPECIFIERS      
+      1] public	
+      2] private	
+      3] protected	
+
+
+       PUBLIC 
+          Accessible from anywhere (inside or outside the class)
+       
+       PRIVATE
+          Accessible only within the class itself
+       
+       PROTECTED
+         Accessible within the class and its subclasses
+
+
+       CONSTRUCTOR 
+          __construct is a magic method in PHP. It is automatically called when a new object of the class is created.
+
+         __construct() is used to initialize object properties when the object is created.
+
+
+     The -> operator is used to access properties and methods of an object.
+    
+     $this->name means "access the name property of the current object."
+
+    $student->show() means "call the show() method on the $student object."
+
+   eg :
+      class Student {
+         public $name; // Property to store the student's name
+
+         function __construct($n) {
+            $this->name = $n; // Set the name when the object is created
+         }
+
+         function show() {
+            echo "Name: " . $this->name; // Display the name
+         }
+      }
+
+$obj = new Student("Sagar");
+$obj->show();
+
+*]Magic Methods in PHP?
+     They're automatically called in certain situations
+     we don’t call them directly
+1. __construct() : called when object is created
+
+2. __destruct() : called when an object is destroyed
+
+3. __get($name) : called when accessing an undefined or inaccessible prperty
+
+4. __set($name, $value) : Called when setting an undefined or inaccessible property
+
+5. __call($name, $arguments) : Called when invoking an undefined or inaccessible method
+
+6. __toString() : Called when an object is treated as a string
+
+7. __clone() : 	Called when an object is cloned
+
+8. __invoke() : Called when an object is used as a function
