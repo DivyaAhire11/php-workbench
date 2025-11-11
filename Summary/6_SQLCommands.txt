@@ -1,0 +1,8 @@
+SQL commands are grouped into five main categories: 
+   
+   1] Data Definition Language (DDL)
+   2] Data Manipulation Language (DML)
+   3] Data Query Language (DQL)
+   4] Data Control Language (DCL)
+   5] Transaction Control Language (TCL)
+
