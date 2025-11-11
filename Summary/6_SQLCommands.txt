@@ -68,3 +68,25 @@ Transaction Control Language (TCL) : Used to manage transactions.
 SET TRANSACTION – Sets transaction properties.
 
 SET TRANSACTION READ ONLY;
+
+
+
+       ----**--- Other Key Concepts ----**----
+
+    Joins – Combine rows from multiple tables.
+       eg : SELECT * FROM orders JOIN customers ON orders.customer_id = customers.id;
+
+    Constraints – Enforce rules on data.
+      eg : PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK
+
+    Indexes – Improve query performance.
+      eg : CREATE INDEX idx_name ON employees(name);
+
+    Views – Virtual tables.
+      eg : CREATE VIEW emp_view AS SELECT name FROM employees;
+
+    Subqueries – Nested queries.
+      eg : SELECT name FROM employees WHERE id IN (SELECT id FROM managers);
+
+
+
