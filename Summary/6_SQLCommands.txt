@@ -34,3 +34,37 @@ SQL commands are grouped into five main categories:
 3]DELETE – Removes records.
     eg : DELETE FROM employees WHERE id = 1;
 
+
+
+**) Data Query Language (DQL) : Used to query and retrieve data.
+
+1] SELECT – Retrieves data from one or more tables.
+    eg : SELECT * FROM employees;
+
+     ** Includes clauses like WHERE, GROUP BY, ORDER BY, HAVING, DISTINCT, LIMIT.
+
+
+Data Control Language (DCL) : Used to control access to data.
+ 
+ 1] GRANT – Gives user access privileges.
+    eg : GRANT SELECT ON employees TO user1;
+
+ 2] REVOKE – Removes access privileges.
+     eg : REVOKE SELECT ON employees FROM user1;
+
+
+
+Transaction Control Language (TCL) : Used to manage transactions.
+
+ 1] COMMIT – Saves changes.
+     eg : COMMIT;
+
+ 2] ROLLBACK – Undoes changes.
+     eg : ROLLBACK;
+
+ 3] SAVEPOINT – Sets a point to rollback to.
+     eg :SAVEPOINT sp1;
+
+SET TRANSACTION – Sets transaction properties.
+
+SET TRANSACTION READ ONLY;
