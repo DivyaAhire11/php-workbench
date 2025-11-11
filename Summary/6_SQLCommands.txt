@@ -6,3 +6,31 @@ SQL commands are grouped into five main categories:
    4] Data Control Language (DCL)
    5] Transaction Control Language (TCL)
 
+
+**) Data Definition Language (DDL) : Used to define and manage database structure.
+
+1] CREATE – Creates a new table, database, index, or view.
+     eg : CREATE TABLE employees (id INT, name VARCHAR(50));
+
+2] ALTER – Modifies an existing database object.
+   eg:  ALTER TABLE employees ADD salary DECIMAL(10,2);
+
+3] DROP – Deletes a table, database, or view.
+    eg : DROP TABLE employees;
+
+4] TRUNCATE – Removes all records from a table without logging individual row deletions.
+    eg : TRUNCATE TABLE employees;
+
+
+
+**) Data Manipulation Language (DML) : Used to manipulate data within tables.
+
+1]INSERT – Adds new records.
+    eg : INSERT INTO employees (id, name) VALUES (1, 'Alice');
+
+2]UPDATE – Modifies existing records.
+    eg : UPDATE employees SET name = 'Bob' WHERE id = 1;
+
+3]DELETE – Removes records.
+    eg : DELETE FROM employees WHERE id = 1;
+
